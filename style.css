@@ -1,0 +1,12 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Erica One', sans-serif;
+    color:#ca0505;
+}
+
+a{
+    color:white;
+}
+
+.photo--group{
+    background-color: #ca0505;
+}

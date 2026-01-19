@@ -1,0 +1,202 @@
+Create a new website using HTML and Bootstrap. 
+The website must include the following:
+At least 2 pages.
+A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Brandon Ramirez">
+    <title>My bootstrap project</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Erica+One&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  
+    <div class="container-fluid">
+    <a class="navbar-brand" href="destinations.html"><h2>JDM Imports</h2></a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="destinations.html">Destinations</a> 
+        </li>
+       
+      </ul>
+    
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- Hero image -->
+ <div>
+<img class="img-fluid" src="/Images/Imports.png" alt="JDM Imports">
+ </div>
+<!-- Welcome Text -->
+<h1 class="text-center p-1">Welcome to the best JDM cars!</h1>
+<p class="text-center fs-5">The best machines Japan has to offer</p>
+<P class="text-center fs-5">What's your favorite?</P>
+
+<!-- Cards -->
+<div class="container">
+  <div class="row row-cols-1 row-cols-lg-3 g-3 m-3 pt-5">
+
+    <div class="col">
+    <div class="card h-100 shadow-lg">
+    <img src="Images/tokyo.jpg" class="card-img-top" alt="Tokyo Skylight">
+    <div class="card-body">
+    <h5 class="card-title">Japan</h5>
+    <p class="card-text fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident adipisci illum dolorem atque sunt aut ratione necessitatibus accusamus veniam autem sed reprehenderit repellat nobis, molestiae a amet nam ipsam.</p>
+    </div>
+ </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow-lg">
+    <img src="Images/nqym3ozwx0b61.webp" class="card-img-top" alt="Winding road for cars">
+    <div class="card-body">
+    <h5 class="card-title">Road</h5>
+    <p class="card-text fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem porro perferendis eveniet, ratione illum dolorum facere rem, dicta sunt molestiae quo natus? Blanditiis fugit sunt nobis id nulla, quae maiores!</p>
+  </div>
+</div>
+    </div>
+
+    <div class="col">
+     <div class="card h-100 shadow-lg">
+    <img src="Images/TS-1-6466D4100E.jpg" class="card-img-top" alt="Turbocharged engine">
+    <div class="card-body">
+    <h5 class="card-title">Turbo</h5>
+    <p class="card-text fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quis cum nesciunt molestiae, asperiores labore esse alias laudantium ratione similique, earum neque ipsa molestias! Omnis consequatur corporis ipsam ducimus in.</p>
+  </div>
+</div>
+    </div>
+
+  </div>
+</div>
+<!-- Picture DIV -->
+    <div class="container mt-5 mb-5 pt-5 pb-5 text-center">
+     <div class="m-3 p-5 photo--group">
+        <div class="row gx-0 g-0">
+            <div class="col-sm-12 pb-4"><h3>All have Turbocharged Engines</h3></div>
+        </div>
+        <div class="row gx-0 g-0">
+            <div class="col-sm-4"> 
+                <img class="img-fluid" src="Images/images.jpg" alt="Subaru WRX" width="400" height="400"/>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="Images/download.jpg" alt="Toyota Supra" width="400" height="400"/>
+            </div>
+        </div>
+        <div class="row gx-0 g-0">
+            <div class="col-sm-4">
+                <img class="img-fluid" src="Images/download (1).jpg" alt="Nissan Skyline" width="400" height="400"/>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="Images/download (2).jpg" alt="Nissan 180SX" width="400" height="400"/>
+            </div>
+            </div>
+     </div>
+    </div>
+
+
+<hr class="border border-danger border-1 opacity-50">
+
+<!-- IMG VIEW ALL LOCATIONS -->
+<div class="container mt-5 pt-5">
+    <div>
+    <div class="card text-bg-dark">
+    <a href="destinations.html">
+  <img src="Images/hq720.jpg" class="card-img img-fluid" alt="Drifting in the mountains"/>
+    
+  <div class="card-img-overlay">
+    <h3 class="card-title">Drifting in the Mountains</h3>
+    <p class="card-text fs-5">These cars were made for this</p>
+        </div>
+       </a> 
+    </div>
+</div>
+
+
+<!-- Contact Form -->
+<h1 class="text-center mt-5 pt-5">Contact Us</h1>
+<h2 class="text-center mb-4">We would love to hear from you!</h2>
+<div class="container">
+    <form class="row g-3 mb-5 ms-3 me-3 pt-5">
+        <div class="col-md-6">
+            <label for="First name" class="form-label">First Name</label>
+            <input type="text" class="form-control"  aria-label="First name" id="inputFirstName">
+        </div>
+        <div class="col-md-6">
+            <label for="Last name" class="form-label">Last Name</label>
+            <input type="text" class="form-control"  aria-label="Last name" id="inputLastName">
+        </div>
+        </div>
+        <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-md-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class= "pt-5 pb-5">
+    <div class="text-center p-2">
+    <h5>&copy; 2024 JDM Imports. All rights reserved.</h5>
+    </div>
+</footer>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
